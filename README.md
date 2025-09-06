@@ -1,8 +1,8 @@
 # Projeto Eleições 2022 – Pipeline de Ingestão e Transformação
 
 Este projeto implementa um **pipeline de dados** com **Apache Airflow**, **MinIO**, **PostgreSQL** e **dbt** para ingestão, armazenamento e transformação dos resultados das eleições de 2022 disponibilizados pelo TSE. README gerado pelo Chat GPT.
----
 
+---
 ## 📂 Estrutura do Projeto
 
 - **Airflow DAG (`dags/ingestao_csv_eleicoes.py`)**
