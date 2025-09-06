@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_votacao
+    description: "Teste de integridade na tabela de staging."
+    columns:
+      - name: nm_municipio
+        description: "Nome do município"
+        tests:
+          - not_null
+      - name: ds_cargo
+        description: "Cargo da eleição"
+        tests:
+          - not_null
+      - name: nr_votavel
+        description: "Número do candidato"
+        tests:
+          - not_null
+      - name: nr_turno
+        description: "Número do turno da eleição"
+        tests:
+          - accepted_values:
+              values: [1, 2]
